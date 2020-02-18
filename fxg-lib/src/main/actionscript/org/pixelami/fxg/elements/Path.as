@@ -14,7 +14,7 @@ package org.pixelami.fxg.elements
 	import flash.display.Graphics;
 	import flash.display.GraphicsPath;
 	import flash.geom.Rectangle;
-	
+
 	import org.pixelami.fxg.elements.fills.LinearGradient;
 	import org.pixelami.fxg.utils.PathSegmentsCollection;
 	

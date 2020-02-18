@@ -14,7 +14,7 @@ package org.pixelami.fxg.elements.strokes
 	import flash.display.GradientType;
 	import flash.display.Graphics;
 	import flash.geom.Matrix;
-	
+
 	import org.pixelami.fxg.elements.fills.FXGFill;
 	import org.pixelami.fxg.elements.fills.GradientEntry;
 	import org.pixelami.fxg.utils.FXGUtil;

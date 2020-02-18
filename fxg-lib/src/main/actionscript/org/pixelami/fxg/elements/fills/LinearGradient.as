@@ -16,9 +16,8 @@ package org.pixelami.fxg.elements.fills
 	import flash.display.InterpolationMethod;
 	import flash.display.SpreadMethod;
 	import flash.geom.Matrix;
-	import flash.geom.Point;
 	import flash.geom.Rectangle;
-	
+
 	import org.pixelami.fxg.utils.FXGUtil;
 	import org.pixelami.fxg.utils.GradientDescriptor;
 	
@@ -279,9 +278,6 @@ package org.pixelami.fxg.elements.fills
 		{
 			prepare();
 			createMatrix(bounds);
-			trace("colors: "+colors);
-			trace("alphas: "+alphas);
-			trace("ratios: "+ratios);
 			value.beginGradientFill(GradientType.LINEAR,colors,alphas,ratios,matrix,spreadMethod,interpolationMethod,focalPointRatio);
 		}
 

@@ -12,9 +12,8 @@
 package org.pixelami.fxg.elements
 {
 	import flash.display.Shape;
-	
+
 	import org.pixelami.fxg.elements.fills.IFXGFill;
-	import org.pixelami.fxg.elements.filters.IFXGFilter;
 	import org.pixelami.fxg.elements.strokes.IFXGStroke;
 	
 	public class FXGShapeElement extends FXGPlacedElement implements IFXGPaintable
@@ -112,23 +111,15 @@ package org.pixelami.fxg.elements
 		{
 			super.updateDisplayList(unscaledWidth,unscaledHeight);
 			
-			
-			//trace("Rect: updateDisplayList");
-			
 			if(fill)
 			{
 				renderFill();
-				//trace("Rect: renderFill complete");
 			}
 			
 			if(stroke)
 			{
 				renderStroke();
-				//trace("Rect: renderStroke");
 			}
-			
-			
-			
 		}
 		
 		protected function renderFill():void{}

@@ -21,11 +21,6 @@ package org.pixelami.fxg.elements
 		
 		use namespace fxg_internal;
 		
-		public function FXGDisplayElement()
-		{
-			addEventListener(Event.ADDED_TO_STAGE,OnAddedToStage);
-		}
-		
 		protected function createChildren():void
 		{
 			
@@ -59,13 +54,6 @@ package org.pixelami.fxg.elements
 			{
 				createChildren();
 			}
-		}
-		
-		
-		
-		protected function OnAddedToStage(event:Event):void
-		{
-			//trace(event);
 		}
 	}
 }

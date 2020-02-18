@@ -13,7 +13,7 @@ package org.pixelami.fxg.utils
 {
 	import flash.geom.Point;
 	import flash.geom.Rectangle;
-	
+
 	import org.pixelami.fxg.elements.fills.GradientEntry;
 	
 	//[ExcludeClass]
@@ -116,7 +116,6 @@ package org.pixelami.fxg.utils
 				var mod:Number = numbers.length % 2;
 				
 				
-				trace("mod: "+mod);
 				if(mod == 0)
 				{
 					minX = v < minX ? v : minX;

@@ -12,7 +12,7 @@
 package org.pixelami.fxg.elements.filters
 {
 	import flash.filters.GradientGlowFilter;
-	
+
 	import org.pixelami.fxg.elements.fills.GradientEntry;
 	import org.pixelami.fxg.utils.FXGUtil;
 	import org.pixelami.fxg.utils.GradientDescriptor;

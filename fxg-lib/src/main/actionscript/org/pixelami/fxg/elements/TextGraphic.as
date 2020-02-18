@@ -87,7 +87,7 @@ package org.pixelami.fxg.elements
 	import flash.text.engine.TextBlock;
 	import flash.text.engine.TextElement;
 	import flash.text.engine.TextLine;
-	
+
 	import org.pixelami.fxg.elements.FXGPlacedElement;
 	
 	

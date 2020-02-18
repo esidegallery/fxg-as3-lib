@@ -14,7 +14,7 @@ package org.pixelami.fxg.renderer
 	import flash.display.DisplayObject;
 	import flash.display.Sprite;
 	import flash.utils.Dictionary;
-	
+
 	import org.pixelami.fxg.elements.BitmapGraphic;
 	import org.pixelami.fxg.elements.Ellipse;
 	import org.pixelami.fxg.elements.FXGElement;
@@ -142,7 +142,6 @@ package org.pixelami.fxg.renderer
 			
 			var elementClass:Class = SchemaTypeRegistry.getInstance().getClass(element.name());
 			
-			trace(element.name(), elementClass);
 			var elementInstance:IFXGElement;
 			
 			
@@ -150,7 +149,6 @@ package org.pixelami.fxg.renderer
 			if(elementClass)
 			{
 				
-				//trace("elementClass: "+elementClass);
 				elementInstance = new elementClass();
 				
 				elementTable[elementInstance] = element;
@@ -164,7 +162,6 @@ package org.pixelami.fxg.renderer
 				// this is designed to help us keep a reference to the Graphic (root) element of the FXG document
 				if(elementInstance is Graphic)
 				{
-					//trace("Graphic: "+elementInstance);
 					graphic = elementInstance as Sprite;
 				}
 				
@@ -172,7 +169,6 @@ package org.pixelami.fxg.renderer
 				// are we a displayElement - i.e do we need to be added to a parent displayObject ?
 				if(elementInstance is IFXGDisplayElement && parent is Sprite)
 				{
-					trace("adding child");
 					parent.addChild(elementInstance as DisplayObject);
 				}
 				
@@ -188,7 +184,6 @@ package org.pixelami.fxg.renderer
 				
 				if(elementInstance is IFXGFilter && parent is IFXGFilterable)
 				{
-					trace("parent",parent);
 					var filters:Array = IFXGFilterable(parent).filters.slice();
 					filters.push(elementInstance as IFXGFilter);
 					IFXGFilterable(parent).filters = filters;
@@ -226,7 +221,6 @@ package org.pixelami.fxg.renderer
 			{
 				for each(var e:XML in element.children())
 				{
-					//trace( e.toXMLString());
 					renderElement(e,elementInstance);
 				}
 			}
@@ -252,14 +246,12 @@ package org.pixelami.fxg.renderer
 				
 				if(value)
 				{
-					trace("value.charAt(0)",value.charAt(0))
 					if(value.charAt(0) == "#")
 					{
 						value = FXGUtil.colorHexStringToInt(property.valueOf());
 					}
 				}
 				
-				trace(name , value);
 				if(object.hasOwnProperty(name))
 				{
 					object[name] = value;

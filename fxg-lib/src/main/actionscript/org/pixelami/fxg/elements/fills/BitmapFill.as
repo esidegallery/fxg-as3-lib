@@ -19,8 +19,6 @@ package org.pixelami.fxg.elements.fills
 	import flash.geom.Matrix;
 	import flash.geom.Rectangle;
 	import flash.net.URLRequest;
-	
-	import org.pixelami.fxg.elements.BitmapGraphic;
 
 	/*
 	Children

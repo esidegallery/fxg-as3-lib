@@ -13,7 +13,7 @@ package org.pixelami.fxg.elements.strokes
 {
 	import flash.display.GradientType;
 	import flash.display.Graphics;
-	
+
 	import org.pixelami.fxg.elements.fills.GradientEntry;
 	import org.pixelami.fxg.elements.transforms.Matrix;
 	import org.pixelami.fxg.utils.FXGUtil;

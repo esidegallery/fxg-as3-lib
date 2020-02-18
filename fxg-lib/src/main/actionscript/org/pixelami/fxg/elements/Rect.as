@@ -12,7 +12,6 @@
 package org.pixelami.fxg.elements
 {
 	import flash.display.Graphics;
-	import flash.display.Shape;
 	import flash.geom.Rectangle;
 	
 	public class Rect extends FXGShapeElement

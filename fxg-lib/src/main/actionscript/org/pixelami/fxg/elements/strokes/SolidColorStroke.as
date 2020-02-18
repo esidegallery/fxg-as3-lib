@@ -12,8 +12,6 @@
 package org.pixelami.fxg.elements.strokes
 {
 	import flash.display.Graphics;
-	
-	import org.pixelami.fxg.utils.FXGUtil;
 
 	/**
 	 * The SolidColorStroke element represents a stroke painted with a solid color, or a solid color with opacity. It is similar to the SolidColor fill type.

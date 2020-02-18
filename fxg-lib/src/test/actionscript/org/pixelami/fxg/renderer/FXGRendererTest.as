@@ -45,16 +45,8 @@ package org.pixelami.fxg.renderer
 			var g0:Group = renderer.graphic.getChildAt(0) as Group;
 			var g1:Group = g0.getChildAt(0) as Group;
 			var l:uint = g1.numChildren;
-			for(var i:uint = 0; i < l; i++)
-			{
-				trace("i",i);
-				
-			}
-			trace("group",g1);
 			var el:Ellipse = g1.getChildAt(0) as Ellipse;
-			trace("el",el);
 			var fill:RadialGradient = el.fill as RadialGradient;
-			trace("entries",fill.entries);
 			assertEquals(7,fill.entries.length);
 		}
 		

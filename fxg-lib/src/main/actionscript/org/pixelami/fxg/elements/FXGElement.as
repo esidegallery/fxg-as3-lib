@@ -12,7 +12,6 @@
 package org.pixelami.fxg.elements
 {
 	import flash.display.Sprite;
-	import flash.events.Event;
 	
 	
 	public class FXGElement extends Sprite implements IFXGElement

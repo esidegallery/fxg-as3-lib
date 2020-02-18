@@ -12,8 +12,6 @@
 package org.pixelami.fxg.elements.filters
 {
 	import flash.filters.DropShadowFilter;
-	
-	import org.pixelami.fxg.utils.SchemaTypeRegistry;
 
 	public class DropShadowFilter extends FXGStandardFilterBase
 	{
